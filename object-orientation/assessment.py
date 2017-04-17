@@ -141,7 +141,7 @@ class Quiz(Exam):
         super(Quiz, self).__init__(exam_name)
 
     def administer(self):
-        return super(Quiz, self).administer()
+        score = super(Quiz, self).administer()
 
         if score > 50.0:
             return 1
